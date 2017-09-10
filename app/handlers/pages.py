@@ -1,4 +1,4 @@
 import flask
 
 def front_page():
-	return "Hello world"
+	return flask.render_template('index.html')

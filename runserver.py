@@ -1,3 +1,3 @@
-import app
+from app import app
 
-app.app.run(debug=True)
+app.app.run(port=4545, debug=True)
