@@ -3,7 +3,7 @@ import logging
 
 import flask
 
-from app import handlers
+from . import handlers
 
 ENV = os.environ.get("ENV", "PROD")
 
