@@ -8,7 +8,7 @@ from . import handlers
 ENV = os.environ.get("ENV", "PROD")
 
 app = flask.Flask(__name__)
-app.secret_key = os.urandom(24)
+app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24))
 
 routes = [
 	('/', 'index', handlers.pages.front_page, ['GET']),
