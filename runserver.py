@@ -1,3 +1,7 @@
+import os
+
 from app import app
 
-app.app.run(port=4545, debug=True)
+PORT = os.environ.get("FLASK_RUN_PORT")
+
+app.app.run(port=PORT, debug=True)
