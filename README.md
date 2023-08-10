@@ -1,6 +1,6 @@
-# Heroku Flask Template
+# Cloud Python Template
 
-A template project for getting a Flask application running quickly on Heroku.
+A template project for getting a Flask application running quickly on Fly.
 
 ## Environment file variables
 
