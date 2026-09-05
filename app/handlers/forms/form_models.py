@@ -1,10 +1,8 @@
-import wtforms
-
-from wtforms import validators
+from wtforms import Form, StringField, validators
 
 
-class ExampleForm(wtforms.Form):
-    field = wtforms.TextField(
+class ExampleForm(Form):
+    field = StringField(
         "field",
         [
             validators.InputRequired(),
